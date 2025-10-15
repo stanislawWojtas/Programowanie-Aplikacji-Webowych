@@ -1,0 +1,53 @@
+.nav {
+	display: flex;
+	width: 60%;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.nav li {
+	list-style: none;
+	width: fit-content;
+	min-width: 20%;
+	border: 2px dotted gray;
+	padding: 0.5em 1em;
+	text-align: center;
+}
+
+.nav li:nth-child(2){
+	background-color: white;
+}
+
+.nav li:nth-child(1){
+	background-color: rgb(202, 198, 198)
+}
+.nav li a {
+	display: block;
+	padding: 0.5em 1em;
+	color: black;
+	text-decoration: none;
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 1.6em;
+}
+
+.nav li img{
+	width: full;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.nav li:hover {
+	background-color: rgb(142, 195, 50);
+	cursor: pointer;
+}
+
+/* ukrywa oryginalny obrazek i zastępuje go nowym */
+.nav li:hover img[src*="home.png"] {
+    content: url("images/go.png"); /* zmieni obrazek home.png na go.png */
+}
+
+
+.nav li:hover img[src*="link.png"] {
+    content: url("images/go.png"); /* zmieni obrazek link.png na go.png */
+}

@@ -1,0 +1,69 @@
+body {
+	font-family: Tahoma, "Lucida Grande", Arial, sans-serif;
+	font-size: 62.5%;
+}
+h1 {
+	font-size: 2.4em;
+}
+h2 {
+	font-size: 1.8em;
+	color: #666666;
+}
+h3 {
+	font-size: 1.4em;
+	color: #14556B;
+}
+p, ul, ol {
+	font-size: 1.2em;
+	line-height: 130%;
+}
+p {
+	color: black;
+	font-size: large;
+}
+
+ul {
+	color: black;
+	list-style: square;
+	margin-left: 0;
+	padding: 0.5rem 1rem;
+}
+
+#page {
+	background-color: #e9f2ea;
+	margin: 0 auto;
+	padding: 20px;
+	width: 80%;
+}
+
+#header {
+	background-color: #14556B;
+	color: white;
+	padding: 1rem;
+	border-top: 3px solid yellow;
+	border-bottom: 3px solid yellow;
+	font-family: "Lucida Grande";
+}
+
+.subheader {
+	color: black;
+	padding-bottom: 0.5rem;
+	border-bottom: 2px solid #66a8be;
+}
+
+#sidebar {
+	float: right;
+	background-color: rgb(246, 224, 81);
+	width: 15%;
+	padding: 0.5rem 1rem;
+	margin-left: 1rem;
+	border: 1px solid #e3b22a;
+	border-top: 5px solid #e3b22a;
+	font-size: 1.1em;
+	color: black;
+}
+
+#sidebar h3 {
+	text-align: center;
+	margin-top: 0.5rem;
+}

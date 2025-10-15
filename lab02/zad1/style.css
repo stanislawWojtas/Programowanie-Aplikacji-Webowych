@@ -1,0 +1,30 @@
+
+
+.box {
+	border: 2px solid blue;
+	width: 80%;
+	margin: 3rem auto;
+	height: 50vh;
+	display: flex;
+}
+.box > div {
+	width:100px;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: large;
+	background-color: lightblue;
+	border: 2px solid navy;
+	border-radius: 1rem;
+	min-height: 100px;
+}
+
+.box > div:nth-child(1) {
+	align-self: stretch;
+}
+
+.box > div:nth-child(3) {
+	align-self: center;
+}
+
+.box > div:nth-child(2n	){
+	align-self: flex-start;
+}

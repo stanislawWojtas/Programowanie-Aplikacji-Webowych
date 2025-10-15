@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    width: 64vw;
+    height: 20rem;
+    margin: 5rem auto;
+    justify-content: space-between;
+    border: 2px dotted black;
+    border-radius: 2%;
+    align-items: center;
+    padding: 1rem;
+	cursor: pointer;
+}
+
+img{
+    width: 30rem;
+    height: 20rem;
+}
+
+.container > div {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.container:hover .first-photo > div{
+	opacity: 1;
+}
+
+.container:hover .second-photo > div{
+	opacity: 1;
+}
+
+
+.overlay-2{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(50, 195, 159, 0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+	
+		img{
+			width: 10rem;
+			height: 10rem;
+			border-radius: 50%;
+			border: 3px solid white;
+			margin-bottom: 1rem;
+		}
+}
+
+.overlay-1{
+	position: absolute;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}

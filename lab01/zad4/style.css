@@ -1,0 +1,31 @@
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 15rem;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1em;
+  background-color: #ccebf3;
+}
+
+input{
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+}
+
+button{
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  background-color: #319fff;
+  color: white;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+button:hover{
+  background-color: #1a75ff;
+}

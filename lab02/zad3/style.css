@@ -1,0 +1,111 @@
+body{
+    font: 1.2em "Trebuchet MS", sans-serif;
+    margin: 1em;
+    padding: 0;
+}
+
+section{
+	background-color: lightgrey;
+	outline: 2px solid black;
+	margin: 1em;
+	transition: transform 3s ease-in-out;
+}
+
+section:hover{
+	transform: perspective(600px) rotateY(360deg);
+}
+
+.flex-container{
+	display: flex;
+	flex-direction: column;;
+}
+
+header{
+	background-color: grey;
+	margin: 0.5em;
+	outline: 2px solid black;
+	padding: 0.5em;
+	margin-bottom: 0;
+	margin-top: 1em;
+}
+
+header > div:nth-child(1){
+	background-color: white;
+	position: absolute;
+	width: 20%;
+	height: 8vh;
+	border: 2px solid black;
+	top: 3em;
+	padding-left: 0.5em;
+	margin-left: 2em;
+}
+
+header > div:nth-child(2){
+	text-align: center;
+	height: 14vh;
+	padding-top: 1em;
+}
+
+nav {
+	background-color: white;
+	height: 8vh;
+	display: flex;
+	margin: 0 0.5em;
+
+	outline: 2px solid black;
+}
+
+nav > div{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+	transition: transform 3s ease-in-out;
+}
+
+nav > div:nth-child(2n-1){
+	background-color: lightgrey;
+	font-weight: bold;
+}
+
+nav > div:hover{
+	background-color: grey;
+	cursor: pointer;
+	transform: rotate(360deg);
+}
+
+.page-content{
+	margin: 0 0.5em;
+	background-color: white;
+	outline: 2px solid black;
+	display: flex;
+	height: 50vh;
+}
+.page-content > div:nth-child(1){
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	border: 2px solid black;
+	padding-top: 2em;
+}
+
+.page-content > div:nth-child(2){
+	flex: 3;
+	display: flex;
+	justify-content: center;
+	border: 2px solid black;
+	padding-top: 2em;
+}
+
+footer{
+	background-color: grey;
+	margin: 0 0.5em;
+	outline: 2px solid black;
+	margin-bottom: 1.5em;
+	height: 8vh;
+	text-align: center;
+}
+footer > div{
+	padding-top: 1em;
+}

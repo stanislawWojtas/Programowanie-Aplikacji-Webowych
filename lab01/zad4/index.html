@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Formularz</title>
+</head>
+<body>
+	<form action="">
+		<label for="nr_konta">Numer konta: </label>
+		<input type="text" id="nr_konta" name="nr_konta" required pattern="[0-9]{26}" placeholder="12345678901234567890123456">
+
+		<label for="imie">Imię: </label>
+		<input type="text" id="imie" name="imie" required pattern="[A-Za-z]+" placeholder="Jan">
+
+		<label for="nazwisko">Nazwisko: </label>
+		<input type="text" id="nazwisko" name="nazwisko" required pattern="[A-Za-z]+" placeholder="Kowalski">
+
+		<label for="email">Email: </label>
+		<input type="email" id="email" name="email" required placeholder="jan.kowalski@example.com">
+
+		<label for="adres">Adres: </label>
+		<input type="text" id="adres" name="adres" required placeholder="ul. Przykładowa 1">
+
+		<label for="kod_pocztowy">Kod Pocztowy: </label>
+		<input type="text" id="kod_pocztowy" name="kod_pocztowy" required pattern="[0-9]{2}-[0-9]{3}" placeholder="12-345">
+
+		<label for="miasto">Miasto: </label>
+		<input type="text" id="miasto" name="miasto" list="miasta" required pattern="[A-Za-z]+" placeholder="Kraków">
+		
+		<datalist id="miasta">
+			<option value="Warszawa">
+			<option value="Kraków">
+			<option value="Łódź">
+			<option value="Wrocław">
+			<option value="Poznań">
+			<option value="Gdańsk">
+			<option value="Szczecin">
+			<option value="Bydgoszcz">
+			<option value="Lublin">
+			<option value="Katowice">
+		</datalist>
+
+		<label for="kwota_przelewu">Kwota Przelewu: </label>
+		<input type="number" id="kwota_przelewu" name="kwota_przelewu" required min="0.01" step="0.01" placeholder="100.00">
+
+		<label for="data_przelewu">Data Przelewu: </label>
+		<input type="date" id="data_przelewu" name="data_przelewu" required value=today>
+
+		<button type="submit">Wyślij przelew</button>
+	</form>
+	<script>
+	// Pobierz dzisiejszą datę w formacie YYYY-MM-DD
+	const today = new Date().toISOString().split('T')[0];
+	// Ustaw wartość pola daty na dzisiejszą datę
+	document.getElementById('data_przelewu').value = today;
+	</script>
+</body>
+</html>
