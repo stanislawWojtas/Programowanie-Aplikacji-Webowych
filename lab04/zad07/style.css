@@ -1,0 +1,72 @@
+body {
+	background-image: linear-gradient(to bottom, #048A04, #aceaea 30%);
+	background-attachment: fixed;
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1{
+	color: white;
+	font-weight: bold;
+
+}
+
+.timetable-container{
+	width: 90%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+	border: 2px solid black;
+	background-color: #DDDD00;
+}
+
+th, td{
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+	height: 5vh;
+	width: 16%;
+}
+
+td{
+	background-color: white;
+}
+
+.time-slot{
+	background-color: white;
+}
+
+.class-header{
+	background-color: #006600;
+	color: white;
+	span{
+		color:#DDEE00;
+	}
+}
+
+.header-day{
+	background-color: #FFFFBB;
+}
+
+.vertical-header{
+	width: 4vw;
+	color: #006600;
+}
+
+.grad-top th, .grad-top td {
+	background-image: linear-gradient(to top, white, #FFFFDD);
+}
+
+.grad-bot th, .grad-bot td {
+	background-image: linear-gradient(to bottom, white, #FFFFDD);
+}
+
+.yel th, .yel td {
+	background-color: #FFFFDD;
+}

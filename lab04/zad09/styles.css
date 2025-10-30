@@ -1,0 +1,211 @@
+.container {
+	height: 80vh;
+	background-color: white;
+	width: 400px;
+	max-width: 90%;
+	margin: 10vh auto;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	font-family: sans-serif;
+	overflow: hidden;
+	transition: background-size 0.5s ease-in-out;
+}
+
+.container:hover {
+	background-size: 110%;
+}
+
+.container:hover .description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.description {
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+	transform: translateY(100%);
+	transition: all 0.5s ease-in-out;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1vw;
+	flex-wrap: wrap;
+	gap: 0;
+	align-items: baseline;
+}
+
+.header h2, .header p {
+	margin: 0;
+	padding: 0.2rem 0;
+}
+
+.header p{
+	color:#9C938E;
+}
+
+.sizes {
+	padding: 0 1vw;
+}
+
+.sizes label{
+	display: inline-block;
+	cursor: pointer;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 1.5rem;
+	margin-right: 0.5rem;
+	font-weight: bold;
+	padding: 0.2rem;
+}
+
+.colors {
+	padding: 0 1vw;
+}
+
+.colors label{
+	display: inline-block;
+	cursor: pointer;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 3px solid white;
+	border-radius: 50%;
+	margin-right: 1rem;
+}
+
+.colors label:nth-of-type(1) {
+	background-color: #D3D3D3;
+}
+
+.colors label:nth-of-type(2) {
+	background-color: #446ABC;
+}
+
+.colors label:nth-of-type(3) {
+	background-color: #EBA423;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.buttons button {
+	padding: 0.7rem 1.3rem;
+	border: none;
+	color: white;
+	cursor: pointer;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button:hover {
+	transform: scale(1.1);
+	
+}
+
+input[type="radio"]{
+	display: none;
+}
+
+body:has(#color-white:checked)  {
+	background-color: #D3D3D3;
+	.container 	{
+		background-image: url(t-shirt-white.png);
+	}
+
+	.header h2:nth-of-type(2){
+		color:#D3D3D3;
+	}
+
+	.sizes label{
+		color: #D3D3D3;
+	}
+
+	.sizes input[type="radio"]:checked + label {
+        background-color: #D3D3D3;
+        color: white;
+    }
+
+	.buttons button{
+		background-color: #D3D3D3;
+	}
+
+	#color-white + label {
+		outline: 2px solid #D3D3D3;
+	}
+}
+
+
+body:has(#color-blue:checked)  {
+	background-color: #446ABC;
+	.container 	{
+		background-image: url(t-shirt-blue.png);
+	}
+
+	.buttons button{
+		background-color: #446ABC;
+	}
+
+	#color-blue + label {
+		outline: 2px solid #446ABC;
+	}
+
+	#color-blue + label {
+		outline: 2px solid #446ABC;
+	}
+
+	.sizes input[type="radio"]:checked + label {
+		background-color: #446ABC;
+		color: white;
+	}
+
+	.header h2:nth-of-type(2){
+		color: #446ABC;
+	}
+
+	.sizes label{
+		color: #446ABC;
+	}
+}
+body:has(#color-yellow:checked) {
+	background-color: #EBA423;
+	.container 	{
+		background-image: url(t-shirt-orange.png);
+	}
+	.header h2:nth-of-type(2){
+		color:#EBA423;
+	}
+
+	.sizes label{
+		color: #EBA423;
+	}
+
+	.sizes input[type="radio"]:checked + label {
+        background-color: #EBA423;
+        color: white;
+    }
+
+	.buttons button{
+		background-color: #EBA423;
+	}
+
+	#color-yellow + label {
+		outline: 2px solid #EBA423;
+	}
+}
+

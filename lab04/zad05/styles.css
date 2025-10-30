@@ -1,0 +1,122 @@
+.switch {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    left: auto;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    z-index: 10;
+}
+
+/* To hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px;
+    background-color: #082b3f;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: white;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 2px #082b3f;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: #082b3f;
+}
+
+.slider:before{
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+body {
+    background-color: #f2f2f2;
+    transition: background-color 0.4s;
+}
+
+
+.card {
+    width: 70%;
+    height: 70%;
+    margin: 15vh auto;
+    display: flex;
+    gap: 3rem;
+    border-radius: 2%;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: background-color 0.4s, color 0.4s;
+}
+
+
+
+picture img{
+    width: 100%;
+    margin: 1rem;
+    outline: 4px solid #082b3f;
+    padding: 0.2rem;
+    border-radius: 5%;
+    transition: outline-color 0.4s;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    color:#082b3f;
+    font-size: 1.1rem;
+    margin-left: 2%;
+    transition: color 0.4s;
+	justify-content: space-evenly
+}
+
+.content button{
+    width: 23%;
+    background-color: #082b3f;
+    color: white;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: large;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/* Dark theme */
+
+body:has(#theme-switch:checked) {
+	background-color: #082b3f;
+}
+
+.card.card:has(#theme-switch:checked){
+	background-color: #082b3f;
+}
+.card.card:has(#theme-switch:checked) .content{
+	color: white;
+	button{
+		background-color: white;
+		color: #082b3f;
+	}
+}
