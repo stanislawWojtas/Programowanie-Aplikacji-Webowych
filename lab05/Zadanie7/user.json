@@ -1,0 +1,145 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "Address": {
+      "Street": "123 Street",
+      "City": "Houston",
+      "Country": "USA"
+    },
+    "email": "john.doe@email.com",
+    "phone": "555-555-5555"
+  },
+  {
+    "firstName": "Ania",
+    "lastName": "Nowak",
+    "Address": {
+      "Street": "Czenowiejska 12",
+      "City": "Krakow",
+      "Country": "Polska"
+    },
+    "email": "ania.nowak@email.com",
+    "phone": "444-444-4444"
+  },
+  {
+    "firstName": "Uwe",
+    "lastName": "Ampler",
+    "Address": {
+      "Street": "Nachodstraße 134",
+      "City": "Berlin", 
+      "Country": "Niemcy"
+    },
+    "email": "uwe.ampler@email.com",
+    "phone": "333-333-3333"
+  },
+  {
+    "firstName": "Marie",
+    "lastName": "Dubois",
+    "Address": {
+      "Street": "15 Rue de la Paix",
+      "City": "Paris",
+      "Country": "Francja"
+    },
+    "email": "marie.dubois@email.com",
+    "phone": "222-222-2222"
+  },
+  {
+    "firstName": "Carlos",
+    "lastName": "Garcia",
+    "Address": {
+      "Street": "Calle Mayor 45",
+      "City": "Madrid",
+      "Country": "Hiszpania"
+    },
+    "email": "carlos.garcia@email.com",
+    "phone": "111-111-1111"
+  },
+  {
+    "firstName": "Piotr",
+    "lastName": "Kowalski",
+    "Address": {
+      "Street": "Marszałkowska 10",
+      "City": "Warszawa",
+      "Country": "Polska"
+    },
+    "email": "piotr.kowalski@email.com",
+    "phone": "666-666-6666"
+  },
+  {
+    "firstName": "Emma",
+    "lastName": "Smith",
+    "Address": {
+      "Street": "Baker Street 221B",
+      "City": "London",
+      "Country": "Wielka Brytania"
+    },
+    "email": "emma.smith@email.com",
+    "phone": "777-777-7777"
+  },
+  {
+    "firstName": "Luca",
+    "lastName": "Rossi",
+    "Address": {
+      "Street": "Via Roma 88",
+      "City": "Rzym",
+      "Country": "Włochy"
+    },
+    "email": "luca.rossi@email.com",
+    "phone": "888-888-8888"
+  },
+  {
+    "firstName": "Katarzyna",
+    "lastName": "Kowal",
+    "Address": {
+      "Street": "Floriańska 3",
+      "City": "Gdańsk",
+      "Country": "Polska"
+    },
+    "email": "katarzyna.wisniewska@email.com",
+    "phone": "999-999-9998"
+  },
+  {
+    "firstName": "Hans",
+    "lastName": "Müller",
+    "Address": {
+      "Street": "Hauptstraße 56",
+      "City": "Monachium",
+      "Country": "Niemcy"
+    },
+    "email": "hans.muller@email.com",
+    "phone": "123-456-7890"
+  },
+  {
+    "firstName": "Sofia",
+    "lastName": "Andersson",
+    "Address": {
+      "Street": "Storgatan 12",
+      "City": "Sztokholm",
+      "Country": "Szwecja"
+    },
+    "email": "sofia.andersson@email.com",
+    "phone": "234-567-8901"
+  },
+  {
+    "firstName": "Marek",
+    "lastName": "Novák",
+    "Address": {
+      "Street": "Václavské náměstí 28",
+      "City": "Praga",
+      "Country": "Czechy"
+    },
+    "email": "marek.novak@email.com",
+    "phone": "345-678-9012"
+  },
+  {
+    "firstName": "Yuki",
+    "lastName": "Tanaka",
+    "Address": {
+      "Street": "Shibuya 1-2-3",
+      "City": "Tokio",
+      "Country": "Japonia"
+    },
+    "email": "yuki.tanaka@email.com",
+    "phone": "456-789-0123"
+  }
+]

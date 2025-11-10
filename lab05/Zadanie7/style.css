@@ -1,0 +1,80 @@
+body{
+	background-color: moccasin;
+	font-family: sans-serif;
+}
+
+h1{
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	color: rgb(109, 68, 22);
+	font-size: 3rem;
+	letter-spacing: 1.5rem;
+}
+
+main{
+	width: 80%;
+	margin: 1rem auto;
+	padding: 1rem;
+	background-color: cornsilk;
+	border-radius: 3rem;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.user-card{
+	display: flex;
+	height: 15vh;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: wheat;
+	border-radius: 2rem;
+	padding: 1rem;
+	margin: 1rem 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	color: rgb(109, 68, 22);
+}
+
+h2{
+	font-size: 2rem;
+	min-width: 33%;
+	margin: 0;
+	letter-spacing: 0.5rem;
+}
+
+label{
+	cursor: pointer;
+	padding: 1rem;
+	background-color: peru;
+	color: wheat;
+	border-radius: 2rem;
+
+	display: flex;
+	align-items: center;
+}
+
+input{
+    width: 30px; /* Szerokość checkboxa */
+    height: 30px; /* Wysokość checkboxa */
+    appearance: none; /* Usunięcie domyślnego stylu */
+    background-color: peru; /* Kolor tła */
+    border: 2px solid rgb(109, 68, 22); /* Obramowanie */
+    border-radius: 50%; /* Okrągły kształt */
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+}
+
+input:checked{
+	background-color: sienna; /* Kolor tła po zaznaczeniu */
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efekt cienia po zaznaczeniu */
+}
+
+.wrapper{
+	width: 33%;
+}
+
+.user-details{
+	display: none;
+}
+
+label:has(input:checked) ~ .wrapper .user-details {
+    display: block;
+}

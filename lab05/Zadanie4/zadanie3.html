@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/app.js" defer></script>
+</head>
+<body>
+	<div class="container">
+		<div class="list">
+			<ul>
+			</ul>
+		</div>
+		<div class="form">
+			<form autocomplete="off">
+				<label for="name">Imię:</label>
+				<input type="text" id="name" name="name" placeholder="Jan Kowalski" required>
+				<label for="age">Wiek:</label>
+				<input type="number" id="age" name="age" placeholder="18" min="0" max="120" required>
+				<button type="submit">Wyślij</button>
+			</form>
+			<button class="delete">Usuń</button>
+		</div>
+	</div>
+</body>
+</html>
