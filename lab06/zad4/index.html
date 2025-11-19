@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts.js" defer></script>
+
+	<title>Document</title>
+</head>
+<body>
+	<div class="top-bar">
+	
+		<div class="title">
+			<i class="bi bi-camera-fill"></i>
+			<h1>Demo by GR - Unsplash API Tester</h1>
+		</div>
+		<div class="search">
+			<div class="search-wrapper">
+				<div class="search-box">
+					<input type="text" class="search-input form-control" placeholder="Search...">
+					<i class="fas fa-search search-icon" role="button" tabindex="0" aria-label="Search"></i>
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <div class="results">
+      <button class="nav-btn prev" type="button" aria-label="Poprzednie zdjęcie">&lt;</button>
+      <div class="gallery" aria-live="polite"></div>
+      <button class="nav-btn next" type="button" aria-label="Następne zdjęcie">&gt;</button>
+    </div>
+
+    <div class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+      <div class="lightbox-content">
+        <img class="lightbox-img" alt="">
+        <button class="lightbox-close" type="button" aria-label="Zamknij">
+          <i class="fa-solid fa-circle-stop"></i>
+        </button>
+      </div>
+    </div>
+</body>
+</html>

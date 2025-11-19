@@ -1,0 +1,153 @@
+body{
+    background-color: antiquewhite;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.controls{
+    margin: 4vh auto;
+    text-align: center;
+    background-color: rgb(160, 97, 35);
+    width: 30vw;
+    min-width: 260px;
+    padding: 1vh 1rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.controls select{
+    padding: 0.35em 0.6em;
+    border-radius: 6px;
+    border: none;
+    background-color: blanchedalmond;
+    color: #333;
+    font-weight: 600;
+}
+
+.countriesTable{
+    width: min(1200px, 95%);
+    margin: 2rem auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.countriesTable th,
+.countriesTable td{
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+.countriesTable thead th{
+    background: linear-gradient(0deg, #fff7ed, #ffe8c9);
+    color: #2b2b2b;
+    text-align: left;
+    font-weight: 700;
+}
+
+.countriesTable thead tr:first-child th{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.countriesTable thead tr.filters th{
+    position: sticky;
+    top: 42px; 
+    z-index: 1;
+    background: #fffdf7;
+    border-bottom: 1px solid #ecdcc8;
+}
+
+.countriesTable tbody tr:nth-child(odd){
+    background: #fffdfa;
+}
+.countriesTable tbody tr:hover{
+    background: #faf4ea;
+}
+
+.countriesTable th.numeric,
+.countriesTable td.numeric{
+    text-align: right;
+}
+
+.countriesTable th.sortable{
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    transition: color .15s ease;
+}
+.countriesTable th.sortable:hover{
+    color: #a06123;
+}
+.countriesTable th.sort-asc::after,
+.countriesTable th.sort-desc::after{
+    content: '';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+}
+.countriesTable th.sort-asc::after{
+    border-bottom-color: #a06123;
+    margin-top: -2px;
+}
+.countriesTable th.sort-desc::after{
+    border-top-color: #a06123;
+    margin-top: 2px;
+}
+
+.countriesTable thead .filters input,
+.countriesTable thead .filters select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: 1px solid #e6d7c5;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    outline: none;
+    transition: border-color .15s ease, box-shadow .15s ease;
+}
+.countriesTable thead .filters input:focus,
+.countriesTable thead .filters select:focus{
+    border-color: #c07a33;
+    box-shadow: 0 0 0 3px rgba(192,122,51,0.15);
+}
+.countriesTable thead .filters .range{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.pagination{
+    width: min(1200px, 95%);
+    margin: 12px auto 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #5a4a3b;
+}
+.pagination button{
+    background: #a06123;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    transition: transform .05s ease, background .15s ease, opacity .15s ease;
+}
+.pagination button:hover{ background: #8e531d; }
+.pagination button:active{ transform: translateY(1px); }
+.pagination button:disabled{
+    background: #c7a485;
+    opacity: .6;
+    cursor: not-allowed;
+}
+

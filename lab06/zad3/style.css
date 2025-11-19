@@ -1,0 +1,12 @@
+body{
+	background-color: navajowhite;
+	font-family: sans-serif;
+}
+
+.questions>div {
+	background-color: rgb(249, 201, 130);
+	width: 80%;
+	margin: 5vh auto;
+	padding: 2rem;
+	border-radius: 2rem;
+}

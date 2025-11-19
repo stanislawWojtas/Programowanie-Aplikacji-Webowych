@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts.js" defer></script>
+	<title>Countries</title>
+</head>
+<body>
+	<!-- <div class="list-container">
+		<ul class="name-list">Name</ul> 
+		<ul class="capital-list">Capital</ul>
+		<ul class="population-list">Population</ul>
+		<ul>Area</ul>
+		<ul>Currency</ul>
+		<ul>Language</ul>
+		<ul>Region</ul>
+		<ul>Subregion</ul>
+		<ul>Un Member</ul>
+	</div> -->
+	<div class="controls">
+		<label>
+			Rows per page:
+			<select id="pageSize">
+				<option>5</option>
+				<option selected>10</option>
+				<option>25</option>
+				<option>50</option>
+			</select>
+		</label>
+	</div>
+
+	<table class="countriesTable">
+		<thead>
+			<tr>
+				<th data-key="name" class="sortable">Name</th>
+				<th data-key="capital" class="sortable">Capital</th>
+				<th data-key="population" class="sortable numeric">Population</th>
+                <th data-key="area" class="sortable numeric">Area</th>
+                <th data-key="currencies" class="sortable">Currency</th>
+                <th data-key="languages" class="sortable">Language</th>
+                <th data-key="region" class="sortable">Region</th>
+                <th data-key="subregion" class="sortable">Subregion</th>
+                <th data-key="unMember" class="sortable">UN Member</th>
+			</tr>
+			<tr class="filters">
+				<th><input id="nameFilter" type="text" placeholder="filter..."></th>
+				<th><input id="capitalFilter" type="text" placeholder="filter..."></th>
+				<th>
+					<div class="range">
+						<input id="populationMinFilter" type="number" placeholder="min"> -
+						<input id="populationMaxFilter" type="number" placeholder="max">
+					</div>
+				</th>
+				<th>
+					<div class="range">
+						<input id="areaMinFilter" type="number" placeholder="min"> -
+						<input id="areaMaxFilter" type="number" placeholder="max">
+					</div>
+				</th>
+				<th><input id="currenciesFilter" type="text" placeholder="filter..."></th>
+				<th><input id="languagesFilter" type="text" placeholder="filter..."></th>
+				<th><input id="regionFilter" type="text" placeholder="filter..."></th>
+				<th><input id="subregionFilter" type="text" placeholder="filter..."></th>
+				<th>
+					<select id="unMemberFilter">
+						<option value="">All</option>
+						<option value="true">Yes</option>
+						<option value="false">No</option>
+					</select>
+				</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+
+	<div class="pagination">
+		<button id="prevBtn">Prev</button>
+		<span id="pageInfo"></span>
+		<button id="nextBtn">Next</button>
+	</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+.search-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-box {
+    position: relative;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.search-box:focus-within {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.search-input {
+    border: 2px solid #eee;
+    border-radius: 30px;
+    padding: 15px 25px;
+    padding-right: 50px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    transition: all 0.3s ease;
+    cursor: pointer; /* klikane */
+}
+
+.search-box:focus-within .search-icon {
+    color: #007bff;
+}
+
+body{
+	color: white;
+	background-color: black;
+}
+
+.title i{
+	color:#FAAA00;
+	font-size: 2rem;
+	margin-right: 1rem;
+}
+
+.top-bar{
+	display: flex;
+	justify-content: space-between;
+	padding: 1%;
+	border-bottom: 4px solid #FAAA00;
+}
+.title{
+	display: flex;
+	align-items: center;
+}
+
+/* Wyniki */
+.results{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 16px auto 0;
+    max-width: 1200px;
+    padding: 0 12px;
+}
+
+.gallery{
+    flex: 1;
+    display: flex;
+    gap: 12px;
+}
+
+.gallery img{
+    flex: 1 1 calc((100% - 7*12px)/8); 
+    max-width: calc((100% - 7*12px)/8);
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.nav-btn{
+    background: #FAAA00;
+    color: #111;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav-btn:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.hidden { display: none; }
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 9999;
+}
+.lightbox.hidden { 
+  display: none !important; 
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  background: transparent;
+  border: none;
+  color: #FAAA00;
+  font-size: 36px;
+  line-height: 1;
+  cursor: pointer;
+}

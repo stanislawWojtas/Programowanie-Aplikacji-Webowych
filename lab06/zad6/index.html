@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<title>Password</title>
+</head>
+<body>
+	<div class="card">
+		<h2>Ocena siły hasła</h2>
+		<form id="password-checker">
+			<label for="password">Password: </label>
+			<input type="password" id="password" name="password" required autocomplete="off">
+			<div class="image"></div>
+		</form>
+		<div class="requirements">
+			<p>Password requirements:</p>
+			<ul>
+				<div class="check"></div><li>at least 8 characters</li>
+				<div class="check"></div><li>at least 1 digit</li>
+				<div class="check"></div><li>at least 1 capital letter</li>
+				<div class="check"></div><li>at least 1 special character</li>
+				<div class="check"></div><li>kolejne 3 znaki nie mogą się powtarzać</li>
+				<div class="check"></div><li>kolejne znaki nie mogą byc znakami po sobie</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

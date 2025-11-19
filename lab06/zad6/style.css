@@ -1,0 +1,69 @@
+body{
+    font-family: sans-serif;
+    position: relative;
+    height: 97vh; 
+}
+
+body::before{
+    content: "";
+	margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://wa-uploads.profitroom.com/newporthotel/1920x845/16345163048168_rynek.jpg");
+    background-size: cover;
+    filter: var(--blur, blur(0px));
+    z-index: -1;
+	padding: 0;
+}
+
+.card{
+	background-color: white;
+	width: 30vw;
+	margin: auto;
+	padding: 2rem;
+	border-radius: 20px ;
+	text-align: center;
+	min-width: 300px;
+	position: relative;
+}
+
+input{
+	margin: 1rem;
+	padding: 0.5rem;
+	border-radius: 10px;
+	border: 1px solid gray;
+}
+.image{
+	top: 120px;
+	right: 20%;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-image: url("eye_closed.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+.requirements{
+	text-align: left;
+	margin-top: 1rem;
+	ul{
+		list-style: none;
+	}
+}
+
+.check{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	position: absolute;
+	left: 30px;
+	background-image: url("wrong.png");
+	background-size: cover;
+}

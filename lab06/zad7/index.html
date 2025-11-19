@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts.js" defer></script>
+	<title>Memory Game</title>
+</head>
+<body>
+	
+	<!-- Ekran startowy -->
+	 <div class="start-container">
+		<h2>Memory Game</h2>
+		<form>
+			<label for="board-size">Select Board Size</label>
+			<select name="board-size" id="board-size">
+				<option value="4">4x4</option>
+				<option value="6">6x6</option>
+				<option value="8">8x8</option>
+			</select>
+			<label for="card-type">Select Cards Types</label>
+			<select name="card-type" id="card-type">
+				<option value="animals">Animals</option>
+				<option value="food">Fruits</option>
+				<option value="clothes">Clothes</option>
+			</select>
+			<button type="submit" class="start-button">Start Game</button>
+		</form>
+	 </div>
+
+	 <!-- Ekran gry -->
+	 <div class="game-container hidden">
+		<div class="game-stats">
+			<p class="moves-count"><span>Moves: </span> 0</p>
+			<p class="time-count"><span>Time: </span> 0s</p>
+		</div>
+		<div class="game-board">
+			<!-- Karty będą generowane dynamicznie tutaj -->
+		</div>
+		<button class="pause-button">Pause</button>
+	 </div>
+
+	 <!-- Ekran końcowy -->
+	<div class="results-container hidden">
+		<h2>Congratulations! You Won!</h2>
+		<p class="final-moves"><span>Total Moves: </span> 0</p>
+		<p class="final-time"><span>Total Time: </span> 0s</p>
+		<h3>To remember your score, enter your name:</h3>
+		<div class="submit-result">
+			<input type="text" class="player-name" placeholder="Enter your name" value="" maxlength="20">
+			<button class="submit-button">Submit Score</button>
+		</div>
+		<h3>Or: </h3>
+		<button class="restart-button">Play Again</button>
+	</div>
+
+	<div class="ranking-container hidden">
+		<h2>TOP SCORES</h2>
+		<div class="all-rankings">
+			<div class="ranking-4 ranking">
+				<h3>4x4 Board</h3>
+				<ul>
+
+				</ul>
+			</div>
+			<div class="ranking-6 ranking">
+				<h3>6x6 Board</h3>
+				<ul>
+	
+				</ul>
+			</div>
+			<div class="ranking-8 ranking">
+				<h3>8x8 Board</h3>
+				<ul>
+
+				</ul>
+			</div>
+		</div>
+		<button class="restart-button">
+			Play Again
+		</button>
+	</div>
+</body>
+</html>

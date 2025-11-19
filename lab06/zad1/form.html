@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts.js" defer></script>
+	<title>Formularz</title>
+</head>
+<body>
+	<div class="card">
+		<div class="steps">
+			<div class="step active">1</div>
+			<div class="line"></div>
+			<div class="step">2</div>
+			<div class="line"></div>
+			<div class="step ">3</div>
+			<div class="line"></div>
+			<div class="step">4</div>
+		</div>
+		<div class="form-group">
+			<form style="">
+				<h2>Imię</h2>
+				<input type="text" name="firstname" required placeholder="Podaj swoje imię" autocomplete="off">
+				<h2>Nazwisko</h2>
+				<input type="text" name="lastname" required placeholder="Podaj swoje nazwisko" autocomplete="off">
+				<div class="form-buttons">
+					<button type="button" class="next-btn">Next</button>
+				</div>
+			</form>
+			
+			<form style="display: none;">
+				<h2>Email</h2>
+				<input type="text" name="firstname" required placeholder="Podaj swoje imię" autocomplete="off">
+				<h2>Phone Number</h2>
+				<input type="text" name="lastname" required placeholder="Podaj swoje nazwisko" autocomplete="off">
+				<div class="form-buttons">
+					<button type="button" class="prev-btn">Previous</button>
+					<button type="button" class="next-btn active">Next</button>
+				</div>
+			</form>
+
+			<form style="display: none;">
+				<h2>Hasło</h2>
+				<input type="text" name="firstname" required placeholder="Podaj swoje imię" autocomplete="off">
+				<h2>Data urodzenia</h2>
+				<input type="text" name="lastname" required placeholder="Podaj swoje nazwisko" autocomplete="off">
+				<div class="form-buttons">
+					<button type="button" class="prev-btn">Previous</button>
+					<button type="button" class="next-btn">Next</button>
+
+				</div>
+			</form>
+
+			<form style="display: none;">
+				<h2>Adres</h2>
+				<input type="text" name="firstname" required placeholder="Podaj swoje imię" autocomplete="off">
+				<h2>PESEL</h2>
+				<input type="text" name="lastname" required placeholder="Podaj swoje nazwisko" autocomplete="off">
+				<div class="form-buttons">
+					<button type="button" class="prev-btn">Previous</button>
+					<button type="button" class="submit-btn">Submit</button>
+				</div>
+			</form>
+		</div>
+</div>
+
+	
+</body>
+</html>

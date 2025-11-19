@@ -1,0 +1,92 @@
+body{
+	background-color: #3B91F6;
+	font-family: sans-serif;
+}
+
+.card{
+	width: 30vw;
+	background-color: white;
+	padding: 2rem;
+	margin: 15vh auto;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	display: flex;
+	flex-direction: column;
+}
+
+.steps{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.line{
+	background-color: black;
+	height: 2px;
+	width: 3%;
+	border-radius: 5px;
+}
+
+.step{
+	color: white;
+	background-color:#C6C7E6ed;
+	width: 1rem;
+	text-align: center;
+	border-radius: 50%;
+	padding: 1rem;
+	font-weight: bold;
+}
+
+
+input{
+	padding: 1rem;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	width: calc(100% - 2rem);
+	margin-bottom: 2rem;
+}
+
+input:focus{
+	outline: none;
+	border-color: #3B91F6;
+	box-shadow: 0 0 5px rgba(59,145,246,0.5);
+	background-color: #E8EFFF;
+}
+
+.next-btn, .submit-btn{
+	background-color: #ccc;
+	color: white;
+	border: none;
+	padding: 0.7rem 1.5rem;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.next-btn:disabled,
+.submit-btn:disabled{
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.next-btn.active,
+.submit-btn.active{
+    background-color: #3B91F6;
+}
+
+.form-buttons{
+	display: flex;
+	justify-content: space-between;
+}
+
+.prev-btn{
+	background-color: #3B91F6;
+	color: white;
+	border: none;
+	padding: 0.7rem 1.5rem;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.active{
+	background-color: #3B91F6;
+}
