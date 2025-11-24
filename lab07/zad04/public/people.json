@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Jan Kowalski",
+    "phone": "+48 501 234 567",
+    "email": "jan.kowalski@example.com"
+  },
+  {
+    "id": 2,
+    "name": "Anna Nowak",
+    "phone": "+48 502 987 654",
+    "email": "anna.nowak@example.com"
+  },
+  {
+    "id": 3,
+    "name": "Piotr Zieliński",
+    "phone": "+48 503 111 222",
+    "email": "piotr.zielinski@example.com"
+  },
+  {
+    "id": 4,
+    "name": "Kasia Wiśniewska",
+    "phone": "+48 504 333 444",
+    "email": "kasia.wisniewska@example.com"
+  },
+  {
+    "id": 5,
+    "name": "Marek Lewandowski",
+    "phone": "+48 505 777 888",
+    "email": "marek.lewandowski@example.com"
+  },
+  {
+    "id": 6,
+    "name": "Julia Wójcik",
+    "phone": "+48 506 555 666",
+    "email": "julia.wojcik@example.com"
+  },
+  {
+    "id": 7,
+    "name": "Tomasz Dąbrowski",
+    "phone": "+48 507 999 000",
+    "email": "tomasz.dabrowski@example.com"
+  },
+  {
+    "id": 8,
+    "name": "Magda Kamińska",
+    "phone": "+48 508 123 987",
+    "email": "magda.kaminska@example.com"
+  },
+  {
+    "id": 9,
+    "name": "Oskar Pawlak",
+    "phone": "+48 509 444 222",
+    "email": "oskar.pawlak@example.com"
+  },
+  {
+    "id": 10,
+    "name": "Ewa Szymczak",
+    "phone": "+48 510 888 123",
+    "email": "ewa.szymczak@example.com"
+  }
+]

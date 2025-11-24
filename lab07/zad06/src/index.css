@@ -1,0 +1,22 @@
+body{
+  font-family: sans-serif;
+}
+h2{
+  color: white;
+  background-color: #4FBF8F;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+}
+.container{
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+}
+
+.container>div{
+  height: 100px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
