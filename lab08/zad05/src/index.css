@@ -1,0 +1,35 @@
+body{
+	font-family: sans-serif;
+	background-color: lightskyblue;
+}
+.container{
+	margin: 0 auto;
+	background-color: rgb(158, 232, 202);
+	width: 70vw;
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+	text-align: center;
+}
+.lists{
+	display: flex;
+	justify-content: space-evenly;
+}
+ul{
+	list-style: none;
+	text-align: start;
+	color: brown;
+	font-size: xx-large;
+	letter-spacing: 0.5rem;
+	font-weight: bold;
+	border: 10px dashed green;
+	padding: 1rem;
+	border-radius: 2rem;
+}
+li{
+	letter-spacing: 0rem;
+	font-size: x-large;
+	font-weight: bold;
+	margin: 0.3rem;
+	cursor: pointer;
+}

@@ -1,0 +1,61 @@
+#root {
+  max-width: 1280px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+body{
+  font-family: sans-serif;
+  background-color: #F0F9FF;
+}
+
+.container{
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.08), 0 2px 6px rgba(2,6,23,0.05);
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.5rem;
+  button{
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+  }
+}
+form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem;
+}
+.input-name{
+  width: 70%;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.08), 0 2px 6px rgba(2,6,23,0.05);
+}
+form>button{
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: large;
+  background-color: aquamarine;
+  cursor: pointer;
+}
+ul{
+  list-style: none;
+}
+li{
+  margin: 1rem;
+  font-size: x-large;
+  font-weight: bold;
+  cursor: pointer;
+}

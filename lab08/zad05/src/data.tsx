@@ -1,0 +1,23 @@
+// data.tsx
+export const initialProducts = [
+	{ id: 1, name: "Mleko", isPriority: false, isCompleted: false },
+	{ id: 2, name: "Chleb", isPriority: true, isCompleted: false },
+	{ id: 3, name: "Jajka", isPriority: false, isCompleted: false },
+	{ id: 4, name: "Masło", isPriority: true, isCompleted: false },
+	{ id: 5, name: "Szynka", isPriority: false, isCompleted: false },
+	{ id: 6, name: "Ser", isPriority: false, isCompleted: false },
+	{ id: 7, name: "Pomidory", isPriority: true, isCompleted: false },
+	{ id: 8, name: "Cukier", isPriority: false, isCompleted: false },
+	{ id: 9, name: "Sól", isPriority: false, isCompleted: false },
+	{ id: 10, name: "Makaron", isPriority: true, isCompleted: false },
+	{ id: 11, name: "Ryż", isPriority: false, isCompleted: false },
+	{ id: 12, name: "Kawa", isPriority: true, isCompleted: false },
+	{ id: 13, name: "Herbata", isPriority: false, isCompleted: false },
+	{ id: 14, name: "Jogurt", isPriority: false, isCompleted: false },
+	{ id: 15, name: "Płatki śniadaniowe", isPriority: false, isCompleted: false },
+	{ id: 16, name: "Oliwa z oliwek", isPriority: true, isCompleted: false },
+	{ id: 17, name: "Mąka", isPriority: false, isCompleted: false },
+	{ id: 18, name: "Cebula", isPriority: false, isCompleted: false },
+	{ id: 19, name: "Ziemniaki", isPriority: false, isCompleted: false },
+	{ id: 20, name: "Papryka", isPriority: true, isCompleted: false },
+];

@@ -1,0 +1,45 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body{
+  font-family: sans-serif;
+  background-color: whitesmoke;
+}
+
+.main-topic{
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.06);
+  padding: 2rem;
+  border-radius: 2rem;
+
+}
+.main-container{
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.06);
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+.topic-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+.topic-container>div{
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.06);
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 20%;
+  p{
+    font-size: larger;
+    margin: 2rem 0;
+  }
+}
+
+button{
+  background-color: #C80056;
+  padding: 1rem;
+  border:none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
