@@ -1,0 +1,58 @@
+[
+	{
+		"id":1,
+		"name": "Axe",
+		"quantity": 5,
+		"price": 199.99,
+		"imageUrl": "https://image.similarpng.com/file/similarpng/very-thumbnail/2021/06/Carpenter's-axe-with-wooden-handle-isolated-on-transparent-background-PNG.png"
+	},
+	{
+		"id":2,
+		"name":"Camera",
+		"quantity":12,
+		"price":149.99,
+		"imageUrl":"https://png.pngtree.com/png-vector/20240905/ourmid/pngtree-black-dslr-camera-with-large-lens-clipart-illustration-stock-photo-png-image_13758787.png"
+	},
+	{
+		"id":3,
+		"name":"Clock",
+		"quantity":12,
+		"price":29.99,
+		"imageUrl":"https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8yOF8zZF9pbGx1c3RyYXRpb25fb2ZfYV9hbGFybV9jbG9ja19pY29uX2lzb2xhdF82ZDVlMzFhYy05NDNmLTQwZDMtYTAwNy1kMjJiYWFiZTA1ZDgucG5n.png"
+	},
+	{
+		"id":4,
+		"name":"Pencil",
+		"quantity":50,
+		"price":2.99,
+		"imageUrl":"https://png.pngtree.com/png-clipart/20250514/original/pngtree-worn-pencil-illustration-png-image_20961144.png"
+	},
+	{
+		"id":5,
+		"name":"Wallet",
+		"quantity":9,
+		"price":24.50,
+		"imageUrl":"https://png.pngtree.com/png-vector/20231018/ourmid/pngtree-leather-wallet-png-file-png-image_10209261.png"
+	},
+	{
+		"id":6,
+		"name":"Scissors",
+		"quantity":0,
+		"price":4.75,
+		"imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyRwQf3cIiaJPl2g8qCnB7uxNsDUE1jlvbeA&s"
+	},
+	{
+		"id":7,
+		"name":"Trash Can",
+		"quantity":12,
+		"price":12.00,
+		"imageUrl":"https://pngimg.com/d/trash_can_PNG18426.png"
+	},
+	{
+		"id":8,
+		"name":"Mystery Gift",
+		"quantity":92,
+		"price":49.99,
+		"imageUrl":"https://toppng.com/uploads/preview/mystery-box-png-mystery-gift-box-5-115629958777dqvxseg3i.png"
+	}
+]
